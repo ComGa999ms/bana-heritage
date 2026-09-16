@@ -743,6 +743,20 @@ address strong {
   color: var(--paper-soft);
 }
 
+.footer-phone {
+  width: fit-content;
+  margin-top: 8px;
+  color: #f2d893;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.footer-phone:hover {
+  color: var(--paper-soft);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .footer-links {
   display: grid;
   justify-items: end;
