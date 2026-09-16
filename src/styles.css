@@ -434,7 +434,7 @@ h3 {
 }
 
 .flavor-card {
-  min-height: 226px;
+  min-height: 292px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -454,13 +454,30 @@ h3 {
   box-shadow: 0 16px 40px rgba(43, 26, 18, 0.12);
 }
 
+.flavor-visual {
+  width: 100%;
+  min-height: 96px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
 .flavor-swatch {
   width: 38px;
   height: 38px;
-  margin-bottom: 18px;
+  flex: 0 0 auto;
   border: 1px solid rgba(43, 26, 18, 0.16);
   border-radius: 8px;
   background: var(--flavor-color);
+}
+
+.flavor-pack {
+  width: min(136px, 72%);
+  height: 96px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 18px rgba(43, 26, 18, 0.18));
 }
 
 .flavor-name {
@@ -488,11 +505,28 @@ h3 {
 .flavor-panel {
   position: sticky;
   top: 96px;
-  min-height: 360px;
+  min-height: 440px;
   border-radius: 8px;
   background: var(--ink);
   color: var(--paper-soft);
   padding: clamp(24px, 4vw, 34px);
+}
+
+.panel-image-wrap {
+  display: grid;
+  place-items: center;
+  min-height: 150px;
+  margin-bottom: 22px;
+  border: 1px solid rgba(255, 248, 236, 0.12);
+  border-radius: 8px;
+  background: rgba(255, 248, 236, 0.08);
+}
+
+.panel-image-wrap img {
+  width: min(230px, 92%);
+  max-height: 150px;
+  object-fit: contain;
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.28));
 }
 
 .panel-index {
@@ -897,6 +931,14 @@ address strong {
 
   .flavor-card {
     min-height: auto;
+  }
+
+  .flavor-visual {
+    min-height: 86px;
+  }
+
+  .flavor-pack {
+    height: 86px;
   }
 
   dl div {

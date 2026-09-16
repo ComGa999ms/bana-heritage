@@ -17,6 +17,8 @@ type Flavor = {
   mood: string;
   colorName: string;
   color: string;
+  image: string;
+  imageAlt: string;
   story: string;
 };
 
@@ -27,6 +29,8 @@ const flavors: Flavor[] = [
     mood: 'Nguyên bản, bùi, giòn nhẹ, thân thuộc và ấm áp.',
     colorName: 'Terracotta Red',
     color: '#A94835',
+    image: '/assets/flavors/me-dau-phong.png',
+    imageAlt: 'Gói kẹo chuối Mè và Đậu Phộng Bana Heritage',
     story:
       'Vị chuối truyền thống được làm dày hơn bằng mè và đậu phộng, hợp với người thích cảm giác mộc mạc, bùi thơm và dễ nhớ.',
   },
@@ -36,6 +40,8 @@ const flavors: Flavor[] = [
     mood: 'Thơm béo, ngọt thanh, nhẹ nhàng và dễ ăn.',
     colorName: 'Ivory Cream',
     color: '#E8D8B8',
+    image: '/assets/flavors/dua.png',
+    imageAlt: 'Gói kẹo chuối Dừa Bana Heritage',
     story:
       'Dừa làm mềm lại vị ngọt của chuối, tạo cảm giác thanh hơn và phù hợp cho hộp quà có nhiều độ tuổi cùng thưởng thức.',
   },
@@ -45,6 +51,8 @@ const flavors: Flavor[] = [
     mood: 'Hương trái cây nhiệt đới rõ nét, ngọt đậm và dai dẻo.',
     colorName: 'Warm Amber',
     color: '#C9762A',
+    image: '/assets/flavors/mit.png',
+    imageAlt: 'Gói kẹo chuối Mít Bana Heritage',
     story:
       'Mít đưa hương trái cây Việt Nam lên phía trước, tạo một lớp mùi thơm rực rỡ nhưng vẫn giữ nền chuối sứ quen thuộc.',
   },
@@ -54,6 +62,8 @@ const flavors: Flavor[] = [
     mood: 'Chua thanh, the mát, giúp cân bằng vị ngọt.',
     colorName: 'Sage Green',
     color: '#78946B',
+    image: '/assets/flavors/tac.png',
+    imageAlt: 'Gói kẹo chuối Tắc Bana Heritage',
     story:
       'Vị tắc giúp món kẹo có nhịp sáng hơn, hợp với người muốn một dư vị gọn, thanh và không quá ngọt.',
   },
@@ -63,6 +73,8 @@ const flavors: Flavor[] = [
     mood: 'Thơm đậm, giàu năng lượng và nổi bật.',
     colorName: 'Imperial Yellow',
     color: '#D6A12E',
+    image: '/assets/flavors/sau-rieng.png',
+    imageAlt: 'Gói kẹo chuối Sầu Riêng Bana Heritage',
     story:
       'Sầu riêng tạo phiên bản cá tính nhất trong bộ sưu tập, dành cho người thích hương vị đậm và dấu ấn nhiệt đới rõ ràng.',
   },
@@ -72,6 +84,8 @@ const flavors: Flavor[] = [
     mood: 'Chua ngọt, tươi mát, trẻ trung và hiện đại.',
     colorName: 'Plum Purple',
     color: '#76516F',
+    image: '/assets/flavors/chanh-day.png',
+    imageAlt: 'Gói kẹo chuối Chanh Dây Bana Heritage',
     story:
       'Chanh dây mang lại độ chua ngọt tươi hơn, giúp kẹo chuối trở nên mới mẻ với nhóm khách trẻ và khách muốn thử vị khác lạ.',
   },
@@ -312,7 +326,10 @@ export default function App() {
                       aria-pressed={isActive}
                       style={{ '--flavor-color': flavor.color } as React.CSSProperties}
                     >
-                      <span className="flavor-swatch" aria-hidden="true" />
+                      <span className="flavor-visual" aria-hidden="true">
+                        <span className="flavor-swatch" />
+                        <img className="flavor-pack" src={flavor.image} alt="" loading="lazy" />
+                      </span>
                       <span className="flavor-name">{flavor.name}</span>
                       <span className="flavor-mood">{flavor.mood}</span>
                       <span className="flavor-color-name">{flavor.colorName}</span>
@@ -322,6 +339,9 @@ export default function App() {
               </div>
 
               <aside className="flavor-panel reveal" aria-live="polite">
+                <div className="panel-image-wrap">
+                  <img src={activeFlavor.image} alt={activeFlavor.imageAlt} loading="lazy" />
+                </div>
                 <span className="panel-index">Vị {activeIndex}/6</span>
                 <h3>{activeFlavor.shortName}</h3>
                 <p>{activeFlavor.story}</p>
