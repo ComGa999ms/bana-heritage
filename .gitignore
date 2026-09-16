@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.sites-runtime/
+.codex-docx-preview/
+.openai/
+.env
+.env.local
+npm-debug.log*
+*.docx
+prompt.md

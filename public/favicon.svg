@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Bana Heritage">
+  <rect width="64" height="64" rx="8" fill="#8F3026"/>
+  <path d="M18 42c13-1 24-10 29-25 2 16-6 29-23 32-3 0-5-2-6-7Z" fill="#F5F0E1"/>
+  <path d="M23 38c9-2 16-8 20-17" fill="none" stroke="#B58A3A" stroke-width="3" stroke-linecap="round"/>
+  <text x="32" y="57" text-anchor="middle" font-family="Georgia, serif" font-size="12" font-weight="700" fill="#F5F0E1">BH</text>
+</svg>
