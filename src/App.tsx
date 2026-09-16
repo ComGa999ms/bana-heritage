@@ -262,7 +262,7 @@ export default function App() {
           <div className="container two-column">
             <div className="section-copy reveal">
               <p className="eyebrow">Câu chuyện thương hiệu</p>
-              <h2 id="story-title">Giữ vị chuối xưa trong một hình hài quà tặng mới.</h2>
+              <h2 id="story-title">Giữ vị chuối xưa trong một hình hài quà tặng mới</h2>
               <p>
                 “Bana” gợi nhắc đến chuối, còn “Heritage” là di sản. Tinh thần của thương hiệu là
                 kế thừa món kẹo chuối quen thuộc, rồi làm mới bằng hương vị, cách đóng gói và cảm
@@ -285,7 +285,7 @@ export default function App() {
           <div className="container showcase-grid">
             <div>
               <p className="eyebrow">Bộ sưu tập chính</p>
-              <h2 id="collection-title">Một hộp quà mở ra sáu sắc thái nhiệt đới.</h2>
+              <h2 id="collection-title">Một hộp quà mở ra sáu sắc thái nhiệt đới</h2>
               <p>
                 Bộ sáu hộp bán lẻ dùng màu nhận diện riêng cho từng vị, giúp người nhận dễ chọn,
                 dễ nhớ và có cảm giác đang khám phá một bộ sưu tập hoàn chỉnh.
@@ -306,7 +306,7 @@ export default function App() {
           <div className="container">
             <div className="section-heading reveal">
               <p className="eyebrow">Bộ sưu tập 6 hương vị</p>
-              <h2 id="flavors-title">Chọn một vị để xem câu chuyện riêng.</h2>
+              <h2 id="flavors-title">Chọn một vị để xem câu chuyện riêng</h2>
               <p>
                 Mỗi hương vị giữ nền chuối sứ nhưng đổi sắc thái bằng một nguyên liệu nhiệt đới
                 quen thuộc, từ bùi ấm đến chua ngọt tươi mát.
@@ -362,7 +362,7 @@ export default function App() {
           <div className="container">
             <div className="section-heading reveal">
               <p className="eyebrow">Giá trị sản phẩm</p>
-              <h2 id="values-title">Chỉn chu từ nguyên liệu đến từng viên kẹo.</h2>
+              <h2 id="values-title">Chỉn chu từ nguyên liệu đến từng viên kẹo</h2>
             </div>
             <div className="values-grid">
               {values.map((item) => {
@@ -383,7 +383,7 @@ export default function App() {
           <div className="container">
             <div className="section-heading reveal">
               <p className="eyebrow">Hai quy cách quà tặng</p>
-              <h2 id="formats-title">Linh hoạt cho thử vị, biếu tặng và trưng bày.</h2>
+              <h2 id="formats-title">Linh hoạt cho thử vị, biếu tặng và trưng bày</h2>
             </div>
 
             <div className="format-grid">
@@ -441,7 +441,7 @@ export default function App() {
           <div className="container business-band reveal">
             <div>
               <p className="eyebrow">Quà tặng doanh nghiệp</p>
-              <h2 id="business-title">Một hộp quà có thể mang dấu ấn riêng của từng dịp tặng.</h2>
+              <h2 id="business-title">Một hộp quà có thể mang dấu ấn riêng của từng dịp tặng</h2>
               <p>
                 Bana Heritage có thể giới thiệu hướng cá nhân hóa bao bì, logo ép kim trên dải ruy
                 băng hoặc chi tiết phù hợp, mã QR và cơ cấu hương vị theo dịp tặng.
