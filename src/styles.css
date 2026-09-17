@@ -414,6 +414,7 @@ h3 {
   margin-top: 14px;
   color: var(--muted-ink);
   font-size: 0.92rem;
+  text-align: center;
 }
 
 .section-heading {
