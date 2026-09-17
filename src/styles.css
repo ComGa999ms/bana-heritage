@@ -96,11 +96,10 @@ img {
 }
 
 .brand-logo {
-  width: 48px;
+  width: 70px;
   height: 48px;
   object-fit: contain;
-  border-radius: 6px;
-  background: var(--paper-soft);
+  background: transparent;
 }
 
 .brand-lockup strong,
@@ -722,7 +721,11 @@ dd {
   height: 64px;
   object-fit: contain;
   border-radius: 6px;
-  background: var(--paper-soft);
+  background: transparent;
+}
+
+.footer-bana-logo {
+  width: 92px;
 }
 
 .footer-school-logo {
@@ -900,7 +903,7 @@ address strong {
   }
 
   .brand-logo {
-    width: 42px;
+    width: 58px;
     height: 42px;
   }
 

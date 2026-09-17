@@ -123,7 +123,7 @@ const values = [
 ];
 
 const assetPaths = {
-  logo: '/assets/bana-heritage-logo.jpeg',
+  logo: '/assets/bana-heritage-logo-photoroom.png',
   schoolLogo: '/assets/school-logo.png',
   sixFlavors: '/assets/bana-heritage-six-flavors.png',
   giftBox: '/assets/bana-heritage-gift-box.png',
@@ -298,7 +298,7 @@ export default function App() {
                 alt="Bộ 6 hộp kẹo chuối Bana Heritage với các hương vị khác nhau"
                 loading="lazy"
               />
-              <figcaption>Bộ hộp bán lẻ: mỗi hộp một hương vị, khối lượng tịnh 200 g.</figcaption>
+              <figcaption>Bộ hộp bán lẻ, mỗi hộp một hương vị, khối lượng tịnh 200g</figcaption>
             </figure>
           </div>
         </section>
@@ -460,7 +460,7 @@ export default function App() {
         <div className="container footer-grid">
           <div>
             <div className="footer-brand-logos">
-              <img src={assetPaths.logo} alt="" className="footer-logo" />
+              <img src={assetPaths.logo} alt="" className="footer-logo footer-bana-logo" />
               <img
                 src={assetPaths.schoolLogo}
                 alt="Logo Trường Đại học Công Thương TP.HCM"
