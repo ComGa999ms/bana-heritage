@@ -459,7 +459,15 @@ export default function App() {
       <footer className="site-footer" id="contact">
         <div className="container footer-grid">
           <div>
-            <img src={assetPaths.logo} alt="" className="footer-logo" />
+            <div className="footer-brand-logos">
+              <img src={assetPaths.logo} alt="" className="footer-logo" />
+              <img
+                src={assetPaths.schoolLogo}
+                alt="Logo Trường Đại học Công Thương TP.HCM"
+                className="footer-logo footer-school-logo"
+                loading="lazy"
+              />
+            </div>
             <h2>Bana Heritage</h2>
             <p>Kế thừa vị cổ, khởi tạo tinh hoa.</p>
           </div>
@@ -480,24 +488,6 @@ export default function App() {
               </button>
             ))}
           </div>
-        </div>
-        <div className="container footer-academic" aria-label="Thông tin nhóm thực hiện đề tài">
-          <img
-            src={assetPaths.logo}
-            alt="Logo Bana Heritage"
-            className="footer-academic-logo"
-            loading="lazy"
-          />
-          <div className="footer-academic-copy">
-            <strong>Nhóm sinh viên Trường Đại học Công Thương TP.HCM</strong>
-            <span>Đề tài: Lập kế hoạch kinh doanh</span>
-          </div>
-          <img
-            src={assetPaths.schoolLogo}
-            alt="Logo Trường Đại học Công Thương TP.HCM"
-            className="footer-academic-logo footer-academic-logo-school"
-            loading="lazy"
-          />
         </div>
       </footer>
     </div>

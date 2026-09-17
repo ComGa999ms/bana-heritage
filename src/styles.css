@@ -710,12 +710,23 @@ dd {
   align-items: center;
 }
 
+.footer-brand-logos {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
 .footer-logo {
   width: 64px;
   height: 64px;
   object-fit: contain;
   border-radius: 6px;
   background: var(--paper-soft);
+}
+
+.footer-school-logo {
+  border-radius: 50%;
+  background: transparent;
 }
 
 .site-footer h2 {
@@ -770,47 +781,6 @@ address strong {
 .footer-links button:hover {
   color: var(--paper-soft);
   background: rgba(245, 240, 225, 0.1);
-}
-
-.footer-academic {
-  display: grid;
-  grid-template-columns: 96px minmax(260px, 1fr) 96px;
-  gap: 24px;
-  align-items: center;
-  margin-top: 34px;
-  padding-top: 26px;
-  border-top: 1px solid rgba(255, 248, 236, 0.16);
-}
-
-.footer-academic-logo {
-  width: 88px;
-  height: 88px;
-  object-fit: contain;
-  border-radius: 18px;
-  background: var(--paper-soft);
-  padding: 8px;
-  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.18);
-}
-
-.footer-academic-logo-school {
-  justify-self: end;
-}
-
-.footer-academic-copy {
-  display: grid;
-  gap: 6px;
-  justify-items: center;
-  text-align: center;
-}
-
-.footer-academic-copy strong {
-  color: var(--paper-soft);
-  font-size: clamp(1rem, 2vw, 1.2rem);
-}
-
-.footer-academic-copy span {
-  color: rgba(255, 248, 236, 0.76);
-  font-weight: 700;
 }
 
 .reveal {
@@ -917,15 +887,6 @@ address strong {
   .footer-links {
     justify-items: start;
   }
-
-  .footer-academic {
-    grid-template-columns: 84px minmax(220px, 1fr) 84px;
-  }
-
-  .footer-academic-logo {
-    width: 76px;
-    height: 76px;
-  }
 }
 
 @media (max-width: 720px) {
@@ -978,21 +939,6 @@ address strong {
   .hero-actions {
     align-items: stretch;
     flex-direction: column;
-  }
-
-  .footer-academic {
-    grid-template-columns: 1fr;
-    justify-items: start;
-    gap: 18px;
-  }
-
-  .footer-academic-logo-school {
-    justify-self: start;
-  }
-
-  .footer-academic-copy {
-    justify-items: start;
-    text-align: left;
   }
 
   .primary-button,
