@@ -602,8 +602,21 @@ h3 {
 
 .format-grid {
   display: grid;
-  grid-template-columns: minmax(260px, 0.8fr) minmax(320px, 1.2fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
+}
+
+.format-hero {
+  display: grid;
+  place-items: center;
+  margin: 0 0 clamp(24px, 4vw, 38px);
+}
+
+.format-hero img {
+  width: min(760px, 100%);
+  border-radius: 10px;
+  background: #fbf4e7;
+  filter: drop-shadow(0 24px 38px rgba(43, 26, 18, 0.18));
 }
 
 .format-card {
@@ -614,20 +627,6 @@ h3 {
   border-radius: 8px;
   background: rgba(255, 248, 236, 0.72);
   padding: clamp(22px, 4vw, 34px);
-}
-
-.format-card.featured-format {
-  display: grid;
-  grid-template-columns: minmax(220px, 0.9fr) minmax(260px, 1fr);
-  align-items: center;
-  gap: clamp(22px, 4vw, 38px);
-  background: #fbf4e7;
-}
-
-.format-card img {
-  width: 100%;
-  border-radius: 8px;
-  filter: drop-shadow(0 22px 34px rgba(43, 26, 18, 0.18));
 }
 
 .format-kicker {
@@ -952,8 +951,7 @@ address strong {
 
   .story-strip-grid,
   .values-grid,
-  .flavor-grid,
-  .format-card.featured-format {
+  .flavor-grid {
     grid-template-columns: 1fr;
   }
 

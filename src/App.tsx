@@ -387,6 +387,14 @@ export default function App() {
               <h2 id="formats-title">Linh hoạt cho thử vị, biếu tặng và trưng bày</h2>
             </div>
 
+            <figure className="format-hero reveal" aria-label="Hộp quà Bộ sưu tập Lục vị Bana Heritage">
+              <img
+                src={assetPaths.giftBox}
+                alt="Hộp quà Bộ sưu tập Lục vị Bana Heritage"
+                loading="lazy"
+              />
+            </figure>
+
             <div className="format-grid">
               <article className="format-card reveal">
                 <div>
@@ -409,12 +417,7 @@ export default function App() {
                 </dl>
               </article>
 
-              <article className="format-card featured-format reveal">
-                <img
-                  src={assetPaths.giftBox}
-                  alt="Hộp quà Bộ sưu tập Lục vị Bana Heritage"
-                  loading="lazy"
-                />
+              <article className="format-card reveal">
                 <div>
                   <p className="format-kicker">Bộ sưu tập Lục vị</p>
                   <h3>Hộp quà mở hai cánh</h3>
