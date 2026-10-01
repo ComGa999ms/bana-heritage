@@ -478,7 +478,7 @@ export default function App() {
             <Building2 size={22} aria-hidden="true" />
             <span>
               <strong>Công Ty TNHH Bana Heritage Việt Nam</strong>
-              <span>248 Thoại Ngọc Hầu, phường Hòa Thạnh, quận Tân Phú, TP.HCM</span>
+              <span>140 Lê Trọng Tấn, Phường Tây Thạnh, Tp HCM</span>
               <a className="footer-phone" href="tel:0792055062">
                 0792 055 062
               </a>
