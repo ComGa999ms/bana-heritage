@@ -492,6 +492,10 @@ export default function App() {
             ))}
           </div>
         </div>
+        <p className="container footer-credit">
+          Đơn vị thực hiện: Nhóm sinh viên Lập kế hoạch kinh doanh - Khoa quản trị kinh doanh -
+          Trường Đại học Công Thương TP HCM
+        </p>
       </footer>
     </div>
   );
