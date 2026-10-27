@@ -324,23 +324,73 @@ export default function App() {
         </section>
 
         <section className="section product-showcase reveal" aria-labelledby="collection-title">
-          <div className="container showcase-grid">
-            <div>
+          <div className="container">
+            <div className="section-heading reveal">
               <p className="eyebrow">Bộ sưu tập chính</p>
-              <h2 id="collection-title">Một hộp quà mở ra sáu sắc thái nhiệt đới</h2>
+              <h2 id="collection-title">Hai lựa chọn quà tặng từ chuối Việt</h2>
               <p>
-                Bộ sáu hộp bán lẻ dùng màu nhận diện riêng cho từng vị, giúp người nhận dễ chọn,
-                dễ nhớ và có cảm giác đang khám phá một bộ sưu tập hoàn chỉnh.
+                Chọn từng hộp để khám phá sáu hương vị, hoặc trao tặng trọn vẹn bộ Lục vị trong
+                một hộp quà chỉn chu.
               </p>
             </div>
-            <figure className="product-figure">
-              <img
-                src={assetPaths.sixFlavors}
-                alt="Bộ 6 hộp kẹo chuối Bana Heritage với các hương vị khác nhau"
-                loading="lazy"
-              />
-              <figcaption>Bộ hộp bán lẻ, mỗi hộp một hương vị, khối lượng tịnh 200g</figcaption>
-            </figure>
+
+            <div className="showcase-options">
+              <article className="showcase-option reveal">
+                <div className="showcase-option-image-wrap">
+                  <img
+                    src={assetPaths.retailSixFlavors}
+                    alt="Bộ 6 hộp kẹo chuối Bana Heritage với các hương vị khác nhau"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="showcase-option-body">
+                  <p className="format-kicker">Hộp bán lẻ</p>
+                  <h3>Bộ 6 hộp lẻ</h3>
+                  <p>
+                    Sáu hương vị, mỗi hộp một sắc màu riêng, phù hợp để thưởng thức từng vị hoặc
+                    chọn làm quà nhỏ.
+                  </p>
+                  <dl>
+                    <div>
+                      <dt>Khối lượng</dt>
+                      <dd>200 g / hộp</dd>
+                    </div>
+                    <div>
+                      <dt>Giá đề xuất</dt>
+                      <dd>50.000 đồng / hộp</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+
+              <article className="showcase-option reveal">
+                <div className="showcase-option-image-wrap">
+                  <img
+                    src={assetPaths.giftBox}
+                    alt="Hộp quà Bộ sưu tập Lục vị Bana Heritage"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="showcase-option-body">
+                  <p className="format-kicker">Hộp quà cao cấp</p>
+                  <h3>Bộ sưu tập Lục vị</h3>
+                  <p>
+                    Trọn bộ sáu hương vị trong một hộp quà mở ra trải nghiệm đầy đủ, phù hợp để
+                    biếu tặng và trưng bày.
+                  </p>
+                  <dl>
+                    <div>
+                      <dt>Khối lượng</dt>
+                      <dd>720 g / hộp</dd>
+                    </div>
+                    <div>
+                      <dt>Giá đề xuất</dt>
+                      <dd>175.000 đồng / hộp</dd>
+                    </div>
+                  </dl>
+                </div>
+              </article>
+            </div>
           </div>
         </section>
 
