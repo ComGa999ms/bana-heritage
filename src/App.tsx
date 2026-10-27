@@ -482,7 +482,7 @@ export default function App() {
                   </div>
                   <div>
                     <dt>Giá đề xuất</dt>
-                    <dd>69.000 đồng</dd>
+                    <dd>50.000 đồng</dd>
                   </div>
                 </dl>
               </article>
@@ -502,7 +502,7 @@ export default function App() {
                     </div>
                     <div>
                       <dt>Giá đề xuất</dt>
-                      <dd>249.000 đồng</dd>
+                      <dd>175.000 đồng</dd>
                     </div>
                   </dl>
                 </div>
@@ -534,12 +534,19 @@ export default function App() {
           <div>
             <div className="footer-brand-logos">
               <img src={assetPaths.logo} alt="" className="footer-logo footer-bana-logo" />
-              <img
-                src={assetPaths.schoolLogo}
-                alt="Logo Trường Đại học Công Thương TP.HCM"
-                className="footer-logo footer-school-logo"
-                loading="lazy"
-              />
+              <a
+                href="https://www.facebook.com/HUIT.QTKD"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Khoa Quản trị kinh doanh HUIT trên Facebook"
+              >
+                <img
+                  src={assetPaths.schoolLogo}
+                  alt="Logo Trường Đại học Công Thương TP.HCM"
+                  className="footer-logo footer-school-logo"
+                  loading="lazy"
+                />
+              </a>
             </div>
             <h2>Bana Heritage</h2>
             <p>Kế thừa vị cổ, khởi tạo tinh hoa.</p>
