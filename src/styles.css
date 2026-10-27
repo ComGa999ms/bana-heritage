@@ -742,15 +742,33 @@ h3 {
 
 .format-hero {
   display: grid;
-  place-items: center;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
   margin: 0 0 clamp(24px, 4vw, 38px);
 }
 
-.format-hero img {
-  width: min(760px, 100%);
+.format-hero-card {
+  min-width: 0;
+  margin: 0;
+  padding: clamp(14px, 3vw, 24px);
+  border: 1px solid rgba(43, 26, 18, 0.12);
   border-radius: 10px;
   background: #fbf4e7;
+  text-align: center;
+}
+
+.format-hero-card img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  border-radius: 10px;
   filter: drop-shadow(0 24px 38px rgba(43, 26, 18, 0.18));
+}
+
+.format-hero-card figcaption {
+  margin-top: 14px;
+  color: var(--banana-green);
+  font-weight: 800;
 }
 
 .format-card {
@@ -894,20 +912,6 @@ address strong {
   color: var(--paper-soft);
 }
 
-.footer-phone {
-  width: fit-content;
-  margin-top: 8px;
-  color: #f2d893;
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.footer-phone:hover {
-  color: var(--paper-soft);
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
-
 .footer-links {
   display: grid;
   justify-items: end;
@@ -1017,6 +1021,7 @@ address strong {
   .two-column,
   .flavor-layout,
   .format-grid,
+  .format-hero,
   .footer-grid {
     grid-template-columns: 1fr;
   }

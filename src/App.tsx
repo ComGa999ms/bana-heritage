@@ -508,13 +508,24 @@ export default function App() {
               <h2 id="formats-title">Linh hoạt cho thử vị, biếu tặng và trưng bày</h2>
             </div>
 
-            <figure className="format-hero reveal" aria-label="Hộp quà Bộ sưu tập Lục vị Bana Heritage">
-              <img
-                src={assetPaths.retailSixFlavors}
-                alt="Sáu hộp sản phẩm Bana Heritage với các hương vị khác nhau"
-                loading="lazy"
-              />
-            </figure>
+            <div className="format-hero reveal" aria-label="Hai quy cách quà tặng Bana Heritage">
+              <figure className="format-hero-card">
+                <img
+                  src={assetPaths.retailSixFlavors}
+                  alt="Sáu hộp sản phẩm Bana Heritage với các hương vị khác nhau"
+                  loading="lazy"
+                />
+                <figcaption>Bộ 6 hộp lẻ</figcaption>
+              </figure>
+              <figure className="format-hero-card">
+                <img
+                  src={assetPaths.giftBox}
+                  alt="Hộp quà Bộ sưu tập Lục vị Bana Heritage"
+                  loading="lazy"
+                />
+                <figcaption>Bộ sưu tập Lục vị</figcaption>
+              </figure>
+            </div>
 
             <div className="format-grid">
               <article className="format-card reveal">
@@ -607,9 +618,6 @@ export default function App() {
             <span>
               <strong>Công Ty TNHH Bana Heritage Việt Nam</strong>
               <span>140 Lê Trọng Tấn, Phường Tây Thạnh, Tp HCM</span>
-              <a className="footer-phone" href="tel:0792055062">
-                0792 055 062
-              </a>
             </span>
           </address>
           <div className="footer-links" aria-label="Liên kết nội bộ">
