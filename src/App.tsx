@@ -167,6 +167,7 @@ const assetPaths = {
   schoolLogo: '/assets/school-logo.png',
   sixFlavors: '/assets/bana-heritage-six-flavors.png',
   giftBox: '/assets/bana-heritage-gift-box.png',
+  retailSixFlavors: '/assets/bana-heritage-retail-six-flavors.jpg',
 };
 
 function scrollToSection(target: string) {
@@ -459,8 +460,8 @@ export default function App() {
 
             <figure className="format-hero reveal" aria-label="Hộp quà Bộ sưu tập Lục vị Bana Heritage">
               <img
-                src={assetPaths.giftBox}
-                alt="Hộp quà Bộ sưu tập Lục vị Bana Heritage"
+                src={assetPaths.retailSixFlavors}
+                alt="Sáu hộp sản phẩm Bana Heritage với các hương vị khác nhau"
                 loading="lazy"
               />
             </figure>
