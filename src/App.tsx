@@ -22,6 +22,14 @@ type Flavor = {
   story: string;
 };
 
+type Product = {
+  name: string;
+  pack: string;
+  price: string;
+  image: string;
+  imageAlt: string;
+};
+
 const flavors: Flavor[] = [
   {
     name: 'Chuối Mè và Đậu Phộng',
@@ -91,9 +99,41 @@ const flavors: Flavor[] = [
   },
 ];
 
+const newProducts: Product[] = [
+  {
+    name: 'Kẹo chuối sấy giòn',
+    pack: 'Hộp 150g',
+    price: '49.000đ',
+    image: '/assets/products/keo-chuoi-say-gion.jpg',
+    imageAlt: 'Hộp kẹo chuối sấy giòn Bana Heritage',
+  },
+  {
+    name: 'Thanh chuối yến mạch hạt',
+    pack: 'Hộp 12 thanh x 30g',
+    price: '149.000đ',
+    image: '/assets/products/thanh-chuoi-yen-mach-hat.jpg',
+    imageAlt: 'Hộp thanh chuối yến mạch hạt Bana Heritage',
+  },
+  {
+    name: 'Bánh chuối sấy dẻo',
+    pack: 'Túi 180g',
+    price: '59.000đ',
+    image: '/assets/products/banh-chuoi-say-deo.jpg',
+    imageAlt: 'Túi bánh chuối sấy dẻo Bana Heritage',
+  },
+  {
+    name: 'Chuối lát sấy giòn áo mật',
+    pack: 'Túi 150g',
+    price: '49.000đ',
+    image: '/assets/products/chuoi-lat-say-gion-ao-mat.jpg',
+    imageAlt: 'Túi chuối lát sấy giòn áo mật Bana Heritage',
+  },
+];
+
 const navItems = [
   { label: 'Câu chuyện', target: 'story' },
   { label: 'Bộ sưu tập', target: 'flavors' },
+  { label: 'Sản phẩm mới', target: 'new-products' },
   { label: 'Hộp quà', target: 'formats' },
   { label: 'Giá trị', target: 'values' },
   { label: 'Doanh nghiệp', target: 'business' },
@@ -300,6 +340,36 @@ export default function App() {
               />
               <figcaption>Bộ hộp bán lẻ, mỗi hộp một hương vị, khối lượng tịnh 200g</figcaption>
             </figure>
+          </div>
+        </section>
+
+        <section className="section new-products-section" id="new-products" aria-labelledby="new-products-title">
+          <div className="container">
+            <div className="section-heading reveal">
+              <p className="eyebrow">Dòng sản phẩm mới</p>
+              <h2 id="new-products-title">Thêm lựa chọn từ chuối Việt</h2>
+              <p>
+                Bên cạnh bộ sưu tập sáu hương vị, Bana Heritage giới thiệu thêm những sản phẩm
+                tiện thưởng thức mỗi ngày, từ kẹo sấy giòn đến thanh chuối yến mạch hạt.
+              </p>
+            </div>
+
+            <div className="new-products-grid">
+              {newProducts.map((product) => (
+                <article className="new-product-card reveal" key={product.name}>
+                  <div className="new-product-image-wrap">
+                    <img src={product.image} alt={product.imageAlt} loading="lazy" />
+                  </div>
+                  <div className="new-product-body">
+                    <h3>{product.name}</h3>
+                    <div className="new-product-meta">
+                      <span>{product.pack}</span>
+                      <strong>{product.price}</strong>
+                    </div>
+                  </div>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

@@ -416,6 +416,80 @@ h3 {
   text-align: center;
 }
 
+.new-products-section {
+  background: var(--paper-soft);
+}
+
+.new-products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.new-product-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(43, 26, 18, 0.14);
+  border-radius: 8px;
+  background: rgba(245, 240, 225, 0.72);
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.new-product-card:hover {
+  border-color: var(--antique-gold);
+  box-shadow: 0 16px 38px rgba(43, 26, 18, 0.13);
+  transform: translateY(-3px);
+}
+
+.new-product-image-wrap {
+  display: grid;
+  min-height: 300px;
+  place-items: center;
+  padding: 18px;
+  background: #fbf4e7;
+  border-bottom: 1px solid rgba(43, 26, 18, 0.1);
+}
+
+.new-product-image-wrap img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 18px rgba(43, 26, 18, 0.16));
+}
+
+.new-product-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.new-product-body h3 {
+  margin-bottom: 18px;
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+
+.new-product-meta {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid rgba(43, 26, 18, 0.14);
+  color: var(--muted-ink);
+  font-size: 0.92rem;
+}
+
+.new-product-meta strong {
+  flex: 0 0 auto;
+  color: var(--heritage-red);
+  font-size: 1.1rem;
+}
+
 .section-heading {
   max-width: 780px;
   margin-bottom: clamp(30px, 5vw, 58px);
@@ -886,6 +960,10 @@ address strong {
     grid-template-columns: 1fr;
   }
 
+  .new-products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .flavor-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -963,7 +1041,8 @@ address strong {
 
   .story-strip-grid,
   .values-grid,
-  .flavor-grid {
+  .flavor-grid,
+  .new-products-grid {
     grid-template-columns: 1fr;
   }
 
