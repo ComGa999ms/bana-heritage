@@ -167,7 +167,7 @@ const assetPaths = {
   schoolLogo: '/assets/school-logo.png',
   sixFlavors: '/assets/bana-heritage-six-flavors.png',
   giftBox: '/assets/bana-heritage-gift-box.png',
-  retailSixFlavors: '/assets/bana-heritage-retail-six-flavors.jpg',
+  retailSixFlavors: '/assets/bana-heritage-retail-six-flavors.png',
 };
 
 function scrollToSection(target: string) {
